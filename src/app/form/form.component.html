@@ -1,0 +1,33 @@
+<div form action="reservation.php" method="post">
+    <div class="elem-group">
+        <label for="name">Book Name</label>
+        <input type="text" id="name" name="visitor_name" placeholder="" pattern=[A-Z\sa-z]{3,20} required>
+    </div>
+    <div class="elem-group">
+        <label for="publisher">Publisher Name</label>
+        <input type="text" id="publisher" name="publisher" placeholder="" required>
+    </div>
+    <div class="elem-group">
+        <label for="age">age</label>
+        <input type="number" id="age" name="visitor_age" placeholder="" required>
+    </div>
+    <div class="elem-group">
+        <label for="page">Page No</label>
+        <input type="int" id="page" name="page" placeholder="" required>
+    </div>
+    <hr>
+    <div class="elem-group inlined">
+        <label for="publish-date">Publish Date</label>
+        <input type="date" id="publish-date" name="publish" required>
+    </div>
+    <div class="elem-group">
+
+        <select id="room-selection" name="room_preference" required>
+            <option value="">Book Type</option>
+            <option value="sci-fic">Sci-fic</option>
+            <option value="Drama">Drama</option>
+            <option value="Nobel">Nobel</option>
+        </select>
+    </div>
+    <button type="submit">Save</button>
+</div> >
